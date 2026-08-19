@@ -1,0 +1,1152 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "Dobot",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "DobotMg400"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "AAS for the Dobot MG400 robot"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://example.com/ids/7988_3730_8689_5572"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/technical"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/operational"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/opcua"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/auxilliary"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/models"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/capabilities"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/aas/dobot/coordination"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "Nameplate",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Nameplate"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "This submodel contains identification information on the dobot robot"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/nameplate",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "URIOfTheProduct",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "URI Of The Product"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Unique global identification of the product instance"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "OrderCodeOfManufacturer",
+          "description": [
+            {
+              "language": "en",
+              "text": "Unique combination of numbers and letters issued by the manufacturer"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ManufacturerName",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Manufacturer name"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Name of the company that produced the asset"
+            }
+          ],
+          "value": [
+            {
+              "language": "en",
+              "text": "Shenzhen Yuejiang Technology Co., Ltd"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "idShort": "ManufacturerProductDesignation",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Manufacturer Product Designation"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "A short description of the product"
+            }
+          ],
+          "value": [
+            {
+              "language": "en",
+              "text": "Dobot MG400"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "idShort": "AddressInformation_copy",
+          "value": [
+            {
+              "idShort": "Street",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Street"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Street address of the manufacturing company"
+                }
+              ],
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Chongwen Garden, Nanshan iPark, Liuxian Blvd"
+                }
+              ],
+              "modelType": "MultiLanguageProperty"
+            },
+            {
+              "idShort": "ZipCode",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "ZipCode"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Zip code address of the manufacturer"
+                }
+              ],
+              "value": [
+                {
+                  "language": "en",
+                  "text": "518034"
+                }
+              ],
+              "modelType": "MultiLanguageProperty"
+            },
+            {
+              "idShort": "CityTown",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "CityTown"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "City or Town of the Manufacturer"
+                }
+              ],
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Nanshan District, Shenzhen, Guangdong Province"
+                }
+              ],
+              "modelType": "MultiLanguageProperty"
+            },
+            {
+              "idShort": "NationalCode",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "National Code"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Country code of the manufacturer"
+                }
+              ],
+              "value": [
+                {
+                  "language": "en",
+                  "text": "+86"
+                }
+              ],
+              "modelType": "MultiLanguageProperty"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "CompanyLogo",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Company Logo"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "The symbol representing the asset"
+            }
+          ],
+          "value": "https://manuals.plus/wp-content/uploads/2023/12/Dobot-LOGO-1.jpg",
+          "contentType": "image/jpeg",
+          "modelType": "File"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "TechnicalData",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Technical Data"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "The Technical data describing the asset"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/technical",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "GeneralInformation",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "General Information"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Minimal information about the provider of the Dobot MG400 robot"
+            }
+          ],
+          "value": [
+            {
+              "idShort": "ManufacturerName",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Manufacturer Name"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Name of company that manufactured the asset"
+                }
+              ],
+              "valueType": "xs:string",
+              "value": "Shenzhen Yuejiang Technology Co., Ltd",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "TechnicalProperties",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Technical Properties"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "A list of the technical attributes "
+            }
+          ],
+          "orderRelevant": false,
+          "typeValueListElement": "SubmodelElement",
+          "valueTypeListElement": "xs:string",
+          "value": [
+            {
+              "idShort": "Weight",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Weight (kg)"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "The weight of the Ned 2 Robot in kilograms (kg)"
+                }
+              ],
+              "valueType": "xs:integer",
+              "value": "8",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Payload",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Payload"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "The maximum weight the robot can handle in grams (g)"
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "500",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Repeatability",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Repeatability (mm)"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "The margin of the error of the Dobot Robot in millimeters (mm)."
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "0.05",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Reach",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Reach (mm)"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "The maximum distance the Dobot Robot can reach in millimeters (mm)"
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "440",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "JointsRange",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Joints Range (degrees)"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Range limit of the joints (degrees)"
+                }
+              ],
+              "orderRelevant": false,
+              "typeValueListElement": "SubmodelElement",
+              "valueTypeListElement": "xs:string",
+              "value": [
+                {
+                  "idShort": "Joint1",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint1"
+                    }
+                  ],
+                  "valueType": "xs:string",
+                  "min": "-160",
+                  "max": "160",
+                  "modelType": "Range"
+                },
+                {
+                  "idShort": "Joint2",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint2"
+                    }
+                  ],
+                  "valueType": "xs:float",
+                  "min": "-25",
+                  "max": "85",
+                  "modelType": "Range"
+                },
+                {
+                  "idShort": "Joint3",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint3"
+                    }
+                  ],
+                  "valueType": "xs:string",
+                  "min": "-25",
+                  "max": "105",
+                  "modelType": "Range"
+                },
+                {
+                  "idShort": "Joint4",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint4"
+                    }
+                  ],
+                  "valueType": "xs:string",
+                  "min": "-360",
+                  "max": "360",
+                  "modelType": "Range"
+                }
+              ],
+              "modelType": "SubmodelElementList"
+            },
+            {
+              "idShort": "JointsSpeedLimit",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Joints Speed Limit (degrees/s)"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "The speed limitations on each of the joints in degrees/second (rad/s)"
+                }
+              ],
+              "orderRelevant": false,
+              "typeValueListElement": "SubmodelElement",
+              "valueTypeListElement": "xs:string",
+              "value": [
+                {
+                  "idShort": "Joint1Speed",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint1 Speed"
+                    }
+                  ],
+                  "valueType": "xs:float",
+                  "value": "300",
+                  "modelType": "Property"
+                },
+                {
+                  "idShort": "Joint2Speed",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint2 Speed"
+                    }
+                  ],
+                  "valueType": "xs:float",
+                  "value": "300",
+                  "modelType": "Property"
+                },
+                {
+                  "idShort": "Joint3Speed",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint3 Speed"
+                    }
+                  ],
+                  "valueType": "xs:float",
+                  "value": "300",
+                  "modelType": "Property"
+                },
+                {
+                  "idShort": "Joint4Speed",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Joint4 Speed"
+                    }
+                  ],
+                  "valueType": "xs:float",
+                  "value": "300",
+                  "modelType": "Property"
+                }
+              ],
+              "modelType": "SubmodelElementList"
+            },
+            {
+              "idShort": "DegreesOfFreedom",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Degrees Of Freedom"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "The number of independent movements the robot can move"
+                }
+              ],
+              "valueType": "xs:integer",
+              "value": "4",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementList"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "OperationalData",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Operational Data"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "This submodel includes the real-time information to be monitored from the robot"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/operational",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "PoseData",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Pose Data"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "The robot's Tool Center Point(TCP) pose in Cartesian Space"
+            }
+          ],
+          "orderRelevant": false,
+          "typeValueListElement": "SubmodelElement",
+          "valueTypeListElement": "xs:string",
+          "value": [
+            {
+              "idShort": "PoseX",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Pose X"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "X position of the end effector in mm"
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "0.000",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "PoseY",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Pose Y"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Y Position of the end effector in mm"
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "0.000",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "PoseZ",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Pose Z"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Z position of the end effector in mm"
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "0.000",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "RotEndEffector",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "RotationAngle"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Rotation angle of the end effector around the tool's vertical axis in degrees"
+                }
+              ],
+              "valueType": "xs:float",
+              "value": "0.000",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementList"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "OPCUAServerAccess",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "OPCUA Server Access"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Represents the OPC UA connection endpoint, server information, server name ...etc"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/opcua",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "endpointURL",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "End Point URL"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "This is the main access point"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "opc.tcp://192.168.1.1:4840/Dobot/",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ServerName",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Server Name"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Name for server identification"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "Dobot",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "NamespaceURI",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "NamespaceURI"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Identifies the namespace semantically"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "http://dobot.opcua",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ConnectionStatus",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Connection Status"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Live operational Information whether connection is successful or not"
+            }
+          ],
+          "valueType": "xs:boolean",
+          "value": "false",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "AuxilliaryComponents",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Auxilliary Components"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "This submodel represents other components that are connected to the dobot. To cater to other components that may be added to the dobot"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/auxilliary",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "VacuumGenerator",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Vacuum Generator"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "The vacuum generator creates necessary vacuum levels for handling tasks"
+            }
+          ],
+          "value": [
+            {
+              "idShort": "VacuumGeneratorStatus",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Vacuum Generator Status"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "To indicate whether the vacuum generator is activated or not"
+                }
+              ],
+              "valueType": "xs:boolean",
+              "value": "false",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "Models3D",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "3D models"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Represents the virtual models of the assets"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/models",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "FBXModel",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "FBX Model"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Different information about the FBX 3D model"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "MaterialLibrary",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Material Library"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Different information about the material library"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "OBJModel",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "OBJ Model"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Different information about the OBJ 3D model"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "URDFRepresentation",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "URDF Representation"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Different information about the URDF representation"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "CapabilityDescription",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Capability Description"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Models the robot's processes and resource capabilities"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/capabilities",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "RobotCapabilities",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Robot Capabilities"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Set of capabilities for the dobot"
+            }
+          ],
+          "value": [
+            {
+              "idShort": "LinearMovement",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Linear Movement "
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Represents a linear movement (takes P as an argument which is the target point)"
+                }
+              ],
+              "valueType": "xs:string",
+              "value": "dobot.MovL()",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "PointToPointMovement",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Point to Point Movement "
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Represents a point-to-point movement (takes a target position as an argument) "
+                }
+              ],
+              "valueType": "xs:string",
+              "value": "dobot.MovJ()",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Grasp_ReleaseVacuum",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Grasp and Release Vacuum"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Activate and deactivate the Vacuum (reads the digital pins connected to the vacuum) "
+                }
+              ],
+              "valueType": "xs:string",
+              "value": "dobot.DO()",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "GetPose",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Get Position"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Reads the position of the end effector (X,Y,Z ,r))"
+                }
+              ],
+              "valueType": "xs:string",
+              "value": "dobot.GetPose()",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "idShort": "CoordinationStatus",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Coordination Status"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "To be able to coordinate the different elements of the chain"
+        }
+      ],
+      "id": "https://example.com/ids/aas/dobot/coordination",
+      "kind": "Instance",
+      "submodelElements": [
+        {
+          "idShort": "PieceReady",
+          "description": [
+            {
+              "language": "en",
+              "text": "Flag for communication with other elements in the chain"
+            }
+          ],
+          "valueType": "xs:boolean",
+          "value": "false",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ConfirmedArchColor",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Arch Color"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Detects the color seen by the cameras for the arch to be built"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ArchCountBlue",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "ArchCountBlue"
+            }
+          ],
+          "valueType": "xs:integer",
+          "value": "0",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "ArchCountRed",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "ArchCountRed"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Keeps tabs on number of red pieces for the red arch"
+            }
+          ],
+          "valueType": "xs:integer",
+          "value": "0",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": []
+}
